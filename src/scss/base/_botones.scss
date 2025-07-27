@@ -1,0 +1,27 @@
+
+.boton{
+    @include boton($amarillo, block);
+}
+
+.ver-todas{
+     margin: 2rem;
+    .boton{
+        @include boton($verde, inline);
+       
+    }
+}
+
+.imagen-contacto{
+    .boton{
+        @include boton($amarillo, inline-block);
+    }
+}
+
+
+
+
+
+
+
+
+
