@@ -1,4 +1,15 @@
 
+.testimoniales{
+    h3{
+        font-weight: bold;
+    }
+}
+
+.blog{
+    h3{
+        font-weight: bold;
+    }
+}
 
 .testimonial{
     background-color: $verde;
@@ -11,7 +22,6 @@
     line-height: 1.5;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 20px;
-
 
     blockquote{
         padding-left: 5rem;
@@ -33,6 +43,11 @@
     p{
         text-align: right;
         color: white;
+    }
+
+    &::hover{
+        transform: translateY(-5px);
+        box-shadow: 0 10px 18px rgba(0,0,0,0.15);
 
     }
 

@@ -4,14 +4,25 @@
     }
 }
 
+.seccion{
+    h1{
+        font-weight: bold;
+    }
+}
+
 .icono{
+
+    margin: 2rem;
 
     img{
         height: 10rem;
     }
     h3{
         text-transform: uppercase;
-
+        font-weight: bold;
     }
 
+    p{
+        text-align: justify;
+    }
 }

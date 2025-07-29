@@ -5,6 +5,24 @@
     }
 }
 
+.seccion-anuncio{
+    width: 100%;
+    background-color: #f4f9fc;
+    h2{
+        font-weight: bold;
+    }
+
+    .contenido-anuncio h3{
+        font-size: 2em;
+    }
+}
+
+.contenedor-anuncios{
+    width: 70%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
 .anuncio{
     border-radius: 25px 25px;
     box-shadow: 0 6px 14px rgba(0,0,0,0.1);
@@ -46,13 +64,13 @@
         text-align: justify;
     }
 
-    .precio{
+
+}
+ .precio{
         color: $verde;
         font-weight: bold;
         font-size: 2.4rem;
     }
-
-}
 
 .iconos-caracteristicas{
     display: flex;
