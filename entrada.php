@@ -1,36 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php 
+require 'includes/funciones.php';
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienes Raices Leo</title>
-    <link rel="stylesheet" href="./build/css/app.css">
-</head>
+incluirTemplate('header');
 
-<body>
-
-    <header class="header">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <!-----------Logo------------>
-                <a href="/">
-                    <img src="./build/img/logo.svg" alt="Logo Bienes Raices">
-                </a>
-
-                <!-----------Menu de Navegación------------>
-                <nav class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="anuncios.html">Anuncios</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contacto.html">Contacto</a>
-                </nav>
-
-            </div> <!-----------Close Barra------------>
-
-        </div>
-
-    </header>
+?>
 
     <main class="contenedor seccion contenido-centrado contenido-entrada">
         <h1>Casa Frente al Bosque</h1>
@@ -68,27 +41,4 @@
         </div>
     </main>
 
-    
-
-
-    <!-----------Pie de Página------------>
-    <footer class="footer seccion">
-        <div class="contenedor contenedor footer">
-            <!-----------Menu de Navegación------------>
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </div>
-        <p class="copyright">
-            Todos los Derechos Reservados 2025 &copy; Bienes Raices Leo
-        </p>
-    </footer>
-
-
-    <script src="./build/js/bundle.min.js"></script>
-</body>
-
-</html>
+   <?php incluirTemplate('footer'); ?>

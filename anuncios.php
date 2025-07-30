@@ -1,35 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienes Raices Leo</title>
-    <link rel="stylesheet" href="./build/css/app.css">
-</head>
-<body>
-    
-    <header class="header">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <!-----------Logo------------>
-                <a href="/">
-                    <img src="./build/img/logo.svg" alt="Logo Bienes Raices">
-                </a>
+<?php 
+require 'includes/funciones.php';
 
-                <!-----------Menu de Navegación------------>
-                <nav class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="anuncio.html">Anuncios</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contacto.html">Contacto</a>
-                </nav>
+incluirTemplate('header');
 
-            </div> <!-----------Close Barra------------>
+?>
 
-
-        </div>
-
-    </header>
 
  <section class="seccion seccion-anuncio">
         <h2>Casas y Departamentos</h2>
@@ -62,7 +37,7 @@
 
                     </ul>
 
-                    <a href="anuncio.html" class="boton boton">
+                    <a href="anuncio.php" class="boton boton">
                         Ver Propiedad
                     </a>
 
@@ -95,41 +70,7 @@
 
                     </ul>
 
-                    <a href="anuncio.html" class="boton boton">
-                        Ver Propiedad
-                    </a>
-
-                </div>
-            </div> <!-----------Fin Anuncio----------->
-
-
-                        <div class="anuncio">
-                <picture>
-                    <source srcset="./build/img/anuncio1.webp" type="image/webp">
-                    <source srcset="./build/img/anuncio1.jpg" type="image/jpeg">
-                    <img loading="lazy" src="./build/img/anuncio1.jpg" alt="anuncio">
-                </picture>
-                <div class="contenido-anuncio">
-                    <h3>Casa de Lujo en el Lago</h3>
-                    <p>Casa en el lago con excelente vista, acabados de lujo, piscina y más.</p>
-                    <p class="precio">$3,000,000</p>
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img loading="lazy" src="./build/img/icono_wc.svg" alt="Icono de Baño">
-                            <p>1</p>
-                        </li>
-                        <li>
-                            <img loading="lazy" src="./build/img/icono_dormitorio.svg" alt="icono_dormitorio">
-                            <p>2</p>
-                        </li>
-                        <li>
-                            <img loading="lazy" src="./build/img/icono_estacionamiento.svg" alt="icono_estacionamiento">
-                            <p>1</p>
-                        </li>
-
-                    </ul>
-
-                    <a href="anuncio.html" class="boton boton">
+                    <a href="anuncio.php" class="boton boton">
                         Ver Propiedad
                     </a>
 
@@ -163,7 +104,41 @@
 
                     </ul>
 
-                    <a href="anuncio.html" class="boton boton">
+                    <a href="anuncio.php" class="boton boton">
+                        Ver Propiedad
+                    </a>
+
+                </div>
+            </div> <!-----------Fin Anuncio----------->
+
+
+                        <div class="anuncio">
+                <picture>
+                    <source srcset="./build/img/anuncio1.webp" type="image/webp">
+                    <source srcset="./build/img/anuncio1.jpg" type="image/jpeg">
+                    <img loading="lazy" src="./build/img/anuncio1.jpg" alt="anuncio">
+                </picture>
+                <div class="contenido-anuncio">
+                    <h3>Casa de Lujo en el Lago</h3>
+                    <p>Casa en el lago con excelente vista, acabados de lujo, piscina y más.</p>
+                    <p class="precio">$3,000,000</p>
+                    <ul class="iconos-caracteristicas">
+                        <li>
+                            <img loading="lazy" src="./build/img/icono_wc.svg" alt="Icono de Baño">
+                            <p>1</p>
+                        </li>
+                        <li>
+                            <img loading="lazy" src="./build/img/icono_dormitorio.svg" alt="icono_dormitorio">
+                            <p>2</p>
+                        </li>
+                        <li>
+                            <img loading="lazy" src="./build/img/icono_estacionamiento.svg" alt="icono_estacionamiento">
+                            <p>1</p>
+                        </li>
+
+                    </ul>
+
+                    <a href="anuncio.php" class="boton boton">
                         Ver Propiedad
                     </a>
 
@@ -198,7 +173,7 @@
 
                     </ul>
 
-                    <a href="anuncio.html" class="boton boton">
+                    <a href="anuncio.php" class="boton boton">
                         Ver Propiedad
                     </a>
 
@@ -232,7 +207,7 @@
 
                     </ul>
 
-                    <a href="anuncio.html" class="boton boton">
+                    <a href="anuncio.php" class="boton boton">
                         Ver Propiedad
                     </a>
 
@@ -243,22 +218,4 @@
     </section>
 
     <!-----------Pie de Página------------>
-    <footer class="footer seccion">
-        <div class="contenedor contenedor footer">
-                <!-----------Menu de Navegación------------>
-                <nav class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="anuncio.html">Anuncios</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contacto.html">Contacto</a>
-                </nav>
-        </div>
-        <p class="copyright">
-            Todos los Derechos Reservados 2025 &copy; Bienes Raices Leo
-        </p>
-    </footer>
-
-
-    <script src="./build/js/bundle.min.js"></script>
-</body>
-</html>
+<?php incluirTemplate('footer'); ?>

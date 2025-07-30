@@ -1,34 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienes Raices Leo</title>
-    <link rel="stylesheet" href="./build/css/app.css">
-</head>
-<body>
-    
-    <header class="header">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <!-----------Logo------------>
-                <a href="/">
-                    <img src="./build/img/logo.svg" alt="Logo Bienes Raices">
-                </a>
+<?php 
+require 'includes/funciones.php';
 
-                <!-----------Menu de Navegación------------>
-                <nav class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="anuncios.html">Anuncios</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contacto.html">Contacto</a>
-                </nav>
+incluirTemplate('header');
 
-            </div> <!-----------Close Barra------------>
-
-        </div>
-  
-    </header>
+?>
 
     <main class="contenedor seccion">
         <h1>Nuestro Blog</h1>
@@ -43,7 +18,7 @@
                     </picture>
                 </div>
                 <div class="texto-entrada">
-                    <a href="entrada.html">
+                    <a href="entrada.php">
                         <h4>Terraza en el techo de tu casa</h4>
                         <p>
                             Escrito el: <span>20/10/2024</span> por: <span>Leo</span>
@@ -65,7 +40,7 @@
                     </picture>
                 </div>
                 <div class="texto-entrada">
-                    <a href="entrada.html">
+                    <a href="entrada.php">
                         <h4>Terraza en el techo de tu casa</h4>
                         <p>
                             Escrito el: <span>20/10/2024</span> por: <span>Leo</span>
@@ -87,7 +62,7 @@
                     </picture>
                 </div>
                 <div class="texto-entrada">
-                    <a href="entrada.html">
+                    <a href="entrada.php">
                         <h4>Terraza en el techo de tu casa</h4>
                         <p>
                             Escrito el: <span>20/10/2024</span> por: <span>Leo</span>
@@ -103,22 +78,4 @@
     </main>
 
     <!-----------Pie de Página------------>
-    <footer class="footer seccion">
-        <div class="contenedor contenedor footer">
-                <!-----------Menu de Navegación------------>
-                <nav class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="anuncios.html">Anuncios</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contacto.html">Contacto</a>
-                </nav>
-        </div>
-        <p class="copyright">
-            Todos los Derechos Reservados 2025 &copy; Bienes Raices Leo
-        </p>
-    </footer>
-
-
-    <script src="./build/js/bundle.min.js"></script>
-</body>
-</html>
+<?php incluirTemplate('footer'); ?>

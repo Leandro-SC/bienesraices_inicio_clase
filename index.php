@@ -1,38 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php 
+require 'includes/funciones.php';
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienes Raices Leo</title>
-    <link rel="stylesheet" href="./build/css/app.css">
-</head>
+$inicio = true;
+incluirTemplate('header', $inicio);
 
-<body>
-
-    <header class="header inicio">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <!-----------Logo------------>
-                <a href="/">
-                    <img src="./build/img/logo.svg" alt="Logo Bienes Raices">
-                </a>
-
-                <!-----------Menu de Navegación------------>
-                <nav class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="anuncios.html">Anuncios</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contacto.html">Contacto</a>
-                </nav>
-
-            </div> <!-----------Close Barra------------>
-
-            <h1>Venta de Casas y Departamentos</h1>
-
-        </div>
-
-    </header>
+?>
 
     <main class="contenedor seccion">
         <h1>Más sobre nosotros</h1>
@@ -96,7 +68,7 @@
 
                     </ul>
 
-                    <a href="anuncios.html" class="boton boton">
+                    <a href="anuncios.php" class="boton boton">
                         Ver Propiedad
                     </a>
 
@@ -130,7 +102,7 @@
 
                     </ul>
 
-                    <a href="anuncios.html" class="boton boton">
+                    <a href="anuncios.php" class="boton boton">
                         Ver Propiedad
                     </a>
 
@@ -164,7 +136,7 @@
 
                     </ul>
 
-                    <a href="anuncios.html" class="boton boton">
+                    <a href="anuncios.php" class="boton boton">
                         Ver Propiedad
                     </a>
 
@@ -173,14 +145,14 @@
         </div> <!-----------Fin Contenedor Anuncio----------->
 
         <div class="ver-todas alinear-derecha">
-            <a href="anuncios.html" class="boton">Ver Todas las Propiedades</a>
+            <a href="anuncios.php" class="boton">Ver Todas las Propiedades</a>
         </div>
     </section>
 
     <section class="imagen-contacto">
         <h2>Encuentra la casa de tus sueños</h2>
         <p>Llena el formulario de contacto y un asesor se pondrá en contacto contigo a la brevedad</p>
-        <a href="contacto.html" class="boton">Contáctanos</a>
+        <a href="contacto.php" class="boton">Contáctanos</a>
     </section>
 
     <div class="contenedor seccion seccion-inferior">
@@ -197,7 +169,7 @@
                     </picture>
                 </div>
                 <div class="texto-entrada">
-                    <a href="entrada.html">
+                    <a href="entrada.php">
                         <h4>Terraza en el techo de tu casa</h4>
                         <p>
                             Escrito el: <span>20/10/2024</span> por: <span>Leo</span>
@@ -219,7 +191,7 @@
                     </picture>
                 </div>
                 <div class="texto-entrada">
-                    <a href="entrada.html">
+                    <a href="entrada.php">
                         <h4>Terraza en el techo de tu casa</h4>
                         <p>
                             Escrito el: <span>20/10/2024</span> por: <span>Leo</span>
@@ -241,7 +213,7 @@
                     </picture>
                 </div>
                 <div class="texto-entrada">
-                    <a href="entrada.html">
+                    <a href="entrada.php">
                         <h4>Terraza en el techo de tu casa</h4>
                         <p>
                             Escrito el: <span>20/10/2024</span> por: <span>Leo</span>
@@ -267,24 +239,6 @@
         </section>
     </div>
 
-    <!-----------Pie de Página------------>
-    <footer class="footer seccion">
-        <div class="contenedor contenedor footer">
-            <!-----------Menu de Navegación------------>
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </div>
-        <p class="copyright">
-            Todos los Derechos Reservados 2025 &copy; Bienes Raices Leo
-        </p>
-    </footer>
+<?php incluirTemplate('footer'); ?>
 
-
-    <script src="./build/js/bundle.min.js"></script>
-</body>
-
-</html>
+    
